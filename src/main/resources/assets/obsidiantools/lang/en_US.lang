@@ -1,0 +1,13 @@
+item.obsidian_sword.name=Obsidian Sword
+item.obsidian_axe.name=Obsidian Axe
+item.obsidian_shovel.name=Obsidian Shovel
+item.obsidian_pickaxe.name=Obsidian Pickaxe
+item.obsidian_hoe.name=Obsidian Hoe
+item.obsidian_helmet.name=Obsidian Helmet
+item.obsidian_chestplate.name=Obsidian Chestplate
+item.obsidian_leggings.name=Obsidian Leggings
+item.obsidian_boots.name=Obsidian Boots
+tile.obsidian_furnace_idle.name=Obsidian Furnace
+tile.obsidian_furnace_active.name=Obsidian Furnace
+itemGroup.obsidiantools=Obsidian Tools
+container.obsidianFurnace=Obsidian Furnace

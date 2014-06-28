@@ -15,11 +15,6 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
-
-import buildcraft.api.power.IPowerReceptor;
-import buildcraft.api.power.PowerHandler;
-import buildcraft.api.power.PowerHandler.PowerReceiver;
-
 import com.rjpurse.obsidiantools.ObsidianTools;
 import com.rjpurse.obsidiantools.tileentity.TileEntityObsidianFurnace;
 

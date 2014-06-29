@@ -2,10 +2,9 @@ package com.rjpurse.obsidiantools.blocks;
 
 import com.rjpurse.obsidiantools.ObsidianTools;
 import com.rjpurse.obsidiantools.helpers.RegistryHelper;
-import com.rjpurse.obsidiantools.items.ObsidianItems;
 
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
+
 
 public class ObsidianBlocks {
 	public static Block obsidianFurnaceIdle;

@@ -1,10 +1,6 @@
 package com.rjpurse.obsidiantools;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-
 import com.rjpurse.obsidiantools.armor.ObsidianArmor;
 import com.rjpurse.obsidiantools.blocks.ObsidianBlocks;
 import com.rjpurse.obsidiantools.handler.GuiHandler;

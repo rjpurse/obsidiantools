@@ -10,7 +10,6 @@ import com.rjpurse.obsidiantools.inventory.ContainerObsidianFurnace;
 import com.rjpurse.obsidiantools.tileentity.TileEntityObsidianFurnace;
 
 import cpw.mods.fml.common.network.IGuiHandler;
-import cpw.mods.fml.common.network.NetworkRegistry;
 
 public class GuiHandler implements IGuiHandler {
 

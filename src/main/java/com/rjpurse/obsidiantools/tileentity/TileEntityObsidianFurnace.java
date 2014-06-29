@@ -1,15 +1,13 @@
 package com.rjpurse.obsidiantools.tileentity;
 
+import buildcraft.api.mj.MjBattery;
+
 import com.rjpurse.obsidiantools.blocks.ObsidianFurnace;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
@@ -17,6 +15,9 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
 
 public class TileEntityObsidianFurnace extends TileEntity implements ISidedInventory {
+	
+	@MjBattery (maxCapacity = 1000, maxReceivedPerCycle = 32, minimumConsumption= 0.1)
+	private double mjStored = 0;
 	
 	private String localizedName;
 	
@@ -151,9 +152,9 @@ public class TileEntityObsidianFurnace extends TileEntity implements ISidedInven
 		if(itemStack != null) {
 			Item item = itemStack.getItem();
 			
-			if(item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.air){
-				Block block = Block.getBlockFromItem(item);
-			}
+//			if(item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.air){
+//				Block block = Block.getBlockFromItem(item);
+//			}
 				if(item==Items.lava_bucket) return 30000;
 				
 				//Use other mod fuel types
@@ -165,6 +166,16 @@ public class TileEntityObsidianFurnace extends TileEntity implements ISidedInven
 	}
 
 	public void updateEntity() {
+		System.out.println("MJ Stored = " + this.mjStored);
+		
+		if(this.mjStored < 10){
+			return;
+		} //else {
+//			this.mjStored -= 2;
+//			
+//		}
+		
+		
 		boolean flag = this.burnTime > 0;
 		boolean flag1 = false;
 		

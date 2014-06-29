@@ -14,7 +14,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.ForgeDirection;
 import com.rjpurse.obsidiantools.ObsidianTools;
 import com.rjpurse.obsidiantools.tileentity.TileEntityObsidianFurnace;
 
@@ -31,8 +30,6 @@ public class ObsidianFurnace extends BlockContainer {
 	
 	@SideOnly(Side.CLIENT)
 	private IIcon iconFront;
-	
-	private static boolean keepInventory;
 	
 	public ObsidianFurnace(Boolean isActive) {
 		super(Material.iron);
@@ -146,8 +143,6 @@ public class ObsidianFurnace extends BlockContainer {
 		} else {
 			world.setBlock(x, y, z, ObsidianBlocks.obsidianFurnaceActive);
 		}
-		
-		keepInventory = false;
 		
 		world.setBlockMetadataWithNotify(x, y, z, i, 2);
 		

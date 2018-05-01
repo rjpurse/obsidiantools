@@ -2,13 +2,13 @@
 {
   "modid": "obsidiantools",
   "name": "Obsidian Tools",
-  "description": "Obsidian Tools by sixClutch.",
+  "description": "A set of tools and armor based on obsidian",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["sixClutch"],
-  "credits": "The Forge and FML guys, for making this possible.",
+  "authorList": ["SixClutch"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
